@@ -38,9 +38,6 @@
       "~block/*": [
         "src/components/block/*"
       ],
-      "~i18n/*": [
-        "src/components/i18n/*"
-      ],
       "~views/*": [
         "src/components/views/*"
       ],
@@ -72,8 +69,6 @@
     "src",
     "pages",
     "styles",
-    "next.config.js",
-    "next-env.d.ts",
     "global.d.ts"
   ],
   "exclude": [
