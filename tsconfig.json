@@ -8,19 +8,75 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
+    "strictNullChecks": false,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
+    "noEmit": true,
+    "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@public/*": [
+        "public/*"
+      ],
+      "@static/*": [
+        "static/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "~atom/*": [
+        "src/components/atom/*"
+      ],
+      "~block/*": [
+        "src/components/block/*"
+      ],
+      "~i18n/*": [
+        "src/components/i18n/*"
+      ],
+      "~views/*": [
+        "src/components/views/*"
+      ],
+      "~stores/*": [
+        "src/stores/*"
+      ],
+      "~schema/*": [
+        "src/schema/*"
+      ],
+      "~providers/*": [
+        "src/providers/*"
+      ],
+      "~hooks/*": [
+        "src/hooks/*"
+      ],
+      "~helper/*": [
+        "src/helper/*"
+      ],
+      "~queries/*": [
+        "src/queries/*"
+      ]
+    },
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve",
+    "incremental": true
   },
   "include": [
-    "src"
+    "src",
+    "pages",
+    "styles",
+    "next.config.js",
+    "next-env.d.ts",
+    "global.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
