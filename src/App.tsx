@@ -6,7 +6,9 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/scroll" element={<InfiniteScroll />} />
+        {/* <Route path="/scroll" element={<InfiniteScroll />} /> */}
+        <Route path="/" element={<InfiniteScroll />} />
+        {/* <Route path="/" element={<div>asdsa</div>} /> */}
       </Routes>
     </BrowserRouter>
   );
